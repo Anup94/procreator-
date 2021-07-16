@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>ProCreator App</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="assets/css/customstyle.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- font awasome -->
+    <script src="https://use.fontawesome.com/32e997029c.js"></script>
+    
+</head>
+
+<body id="notificationdBody">
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <div class="dividerNoti"></div>
+    <div class="profileHead">
+
+        <div class="flexProfilehead">
+            <h1>Profile</h1>
+
+            <img src="assets/img/profile-edit.png" alt="edit">
+        </div>
+
+    </div>
+
+    <div class="profileInfo">
+
+        <div class="flexInfo">
+
+            <div class="userDp">
+                <img src="assets/img/User-dp.png" alt="user">
+            </div>
+
+            <div class="userInfo">
+                <h1>Jessie Roberts</h1>
+                <p>1458 files <span>&#8226;</span> 25 folders</p>
+            </div>
+
+        </div>
+
+        <div class="gbProgress">
+            <h2><span>32,5 GB free</span> of 100 GB</h2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <button type="button" id="storageSpacebtn" class="btn btn-outline-primary rounded shadowed me-1 mb-1">Increase storage space</button>
+
+    </div>
+
+
+    <div class="userSettings">
+
+        <div class="flexSetting" onclick="location.href='storage-managment.html'">
+            <div class="settingTitle">
+                <h1>Storage management</h1>
+            </div>
+            <div class="settingOption">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="flexSetting">
+            <div class="settingTitle">
+                <h1>Devices</h1>
+                <p>iPhone, Macbook, iPad</p>
+            </div>
+            <div class="settingOption">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="flexSetting">
+            <div class="settingTitle">
+                <h1>Camera uploads</h1>
+            </div>
+            <div class="settingOption">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="SwitchCheckDefault1" checked />
+                    <label class="form-check-label" for="SwitchCheckDefault1"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="flexSetting">
+            <div class="settingTitle">
+                <h1>Use data for file transfer</h1>
+            </div>
+            <div class="settingOption">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="SwitchCheckDefault2">
+                    <label class="form-check-label" for="SwitchCheckDefault2"></label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="dashboard.html" class="item">
+            <img src="assets/img/icon-cloud.png" alt="cloud-storage">
+        </a>
+        <a href="local-storage.html" class="item">
+            <img src="assets/img/icon-tick.png" alt="icon-tick">
+        </a>
+        <a data-bs-toggle="modal" data-bs-target="#cameraAction" href="#." class="item camIcon">
+            <img src="assets/img/icon-camera.png" alt="camera-icon">
+        </a>
+        <a href="notification.html" class="item">
+            <img src="assets/img/icon-notification.png" alt="notification-icon">
+        </a>
+        <a href="#" class="item">
+            <img src="assets/img/active-profile.png" alt="pofile-icon">
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+
+     <!-- camera tool modal -->
+     <div class="modal fade action-sheet" id="cameraAction" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modalCards">
+                
+                <div class="modal-body">
+                 
+                    <div class="row cameraTool">
+
+                        <div class="col-4 text-center">
+                            <img src="assets/img/scan.png" alt="icon">
+                            <p>Scan</p>
+                        </div>
+                        <div class="col-4 text-center midTool">
+                            <img src="assets/img/add-pic.png" alt="icon">
+                            <p>Photo</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="assets/img/upload-pic.png" alt="icon">
+                            <p>Upload</p>
+                        </div>
+
+                        <div class="col-12 text-center">
+                           <a href="#." data-bs-dismiss="modal"><img src="assets/img/close-popup.png" alt="close"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- * camera tool modal -->
+
+    <!-- ============== Js Files ==============  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- lazyload preload js -->
+    <script src="assets/js/base.js"></script>
+    
+
+</body>
+
+</html>

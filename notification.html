@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>ProCreator App</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="assets/css/customstyle.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+</head>
+
+<body id="notificationdBody">
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <div class="dividerNoti"></div>
+    <div class="notificationHead">
+
+            <h1>Notification</h1>
+
+    </div>
+
+    <div class="notifications text-center">
+
+        <img src="assets/img/no-notification.png" alt="no-notification" width="100%">
+
+        <h1>No notifcations yet</h1>
+        <p>Here you will see the external changes in your shared folders, tags from your peers and other updates</p>
+    </div>
+
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="dashboard.html" class="item">
+            <img src="assets/img/icon-cloud.png" alt="cloud-storage">
+        </a>
+        <a href="local-storage.html" class="item">
+            <img src="assets/img/icon-tick.png" alt="icon-tick">
+        </a>
+        <a data-bs-toggle="modal" data-bs-target="#cameraAction" href="#." class="item camIcon">
+            <img src="assets/img/icon-camera.png" alt="camera-icon">
+        </a>
+        <a href="#" class="item">
+            <img src="assets/img/active-notification.png" alt="notification-icon">
+        </a>
+        <a href="profile.html" class="item">
+            <img src="assets/img/icon-profile.png" alt="pofile-icon">
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+     <!-- camera tool modal -->
+     <div class="modal fade action-sheet" id="cameraAction" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modalCards">
+                
+                <div class="modal-body">
+                 
+                    <div class="row cameraTool">
+
+                        <div class="col-4 text-center">
+                            <img src="assets/img/scan.png" alt="icon">
+                            <p>Scan</p>
+                        </div>
+                        <div class="col-4 text-center midTool">
+                            <img src="assets/img/add-pic.png" alt="icon">
+                            <p>Photo</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="assets/img/upload-pic.png" alt="icon">
+                            <p>Upload</p>
+                        </div>
+
+                        <div class="col-12 text-center">
+                           <a href="#." data-bs-dismiss="modal"><img src="assets/img/close-popup.png" alt="close"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- * camera tool modal -->
+
+    <!-- ============== Js Files ==============  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- lazyload preload js -->
+    <script src="assets/js/base.js"></script>
+    
+
+</body>
+
+</html>

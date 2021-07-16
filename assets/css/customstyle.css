@@ -1,0 +1,748 @@
+body, h1, h2, h3, h4, h5, h6, p, li, ul, ol, img
+{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+@font-face {
+    font-family:"avenirnext-demibold";
+    src: url(../fonts/AvenirNext-DemiBold.ttf);
+  }
+  @font-face {
+    font-family: "avenirnext-medium";
+    src: url(../fonts/AvenirNext-Medium.otf);
+  }
+input:focus{
+    outline: none !important;
+}
+
+/* home mobile ui css */
+@media (min-width: 768px){
+	.mobile-view{
+		display: none;
+	}
+	.desktop-view{
+		display: block;
+	}
+}
+@media (max-width: 768px){
+	.mobile-view{
+		display: block;
+	}
+	.desktop-view{
+		display: none;
+	}
+}
+	.preview-frame{
+		width: 100%;
+		height: 100%;
+		border: none;
+		overflow:hidden;
+	}
+	.iframe-wrap{
+		width: 375px;
+		height: 667px;
+		display: inline-block;
+		border: 6px solid #333;
+	    border-radius: 20px;
+	    overflow: hidden;
+	    box-shadow: 2px 4px 4px rgba(33,33,33,.3);
+	    margin: 50px auto;
+	    display: block;
+	}
+	.qr{
+		position: absolute;
+	    width: 200px;
+	    height: auto;
+	    display: inline-block;
+	    top: 200px;
+	    left: 13%;
+	    text-align: center;
+		vertical-align: top;
+	}
+	.qr img{
+		width: 200px;
+		height: 200px;
+		vertical-align: top;
+	}
+	.qr span{
+	    font-size: 22px;
+	    line-height: 36px;
+	    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+		display: block;
+		vertical-align: top;
+		margin-top: -5px;
+	}
+
+	@media (min-width: 768px){
+		.qr{
+		    width: 150px;
+		    left: 4%;
+		}	
+		.qr img{
+			width: 150px;
+			height: 150px;
+		}
+		.qr span{
+		    font-size: 20px;
+		    line-height: 32px;
+		}
+	}
+	@media (min-width: 990px){
+		.qr{
+		    width: 200px;
+		    left: 10%;
+		}	
+		.qr img{
+			width: 200px;
+			height: 200px;
+		}
+		.qr span{
+		    font-size: 22px;
+		    line-height: 36px;
+		}
+	}
+	@media (min-width: 1200px){
+		.qr{
+		    left: 13%;
+		}	
+	}
+/* home mobile ui css */
+
+
+/* Splash Screen css */
+#splashBody
+{
+    background-color: #e9efff;
+    background-image: url(../img/splash-screen.png);
+    background-size: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.manServer
+{
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: right;
+}
+.manServer p
+{
+    font-family:"avenirnext-demibold";
+    color: #3c64c7;   
+    font-size: 24px;
+    margin: 15px 0 12px 0 !important;
+}
+.manServer a img
+{
+    margin: 20px 12px 0 0;
+}
+
+@media only screen and (max-width:450px)
+{
+    .manServer
+    {
+        margin: 14vw 0 0 0;
+    }
+}
+@media only screen and (max-width:420px)
+{
+    .manServer
+    {
+        margin: 20vw 0 0 0;
+    }
+}
+/* Splash Screen css */
+
+
+/* Dashboard screen css */
+.appBottomMenu img
+{
+    width: 35%;
+}
+.camIcon img
+{
+    width: 52%;
+}
+#dashboardBody
+{
+    background-color: #4274eb;
+}
+.dividerBox
+{
+    display: block;
+    padding: 15px 0;
+    background-color: #89aafa;
+}
+.helloUser
+{
+    background-image: url(../img/dashboard-wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #89aafa;
+    padding: 46px 30px;
+}
+.helloUser h1
+{
+    color: #fff;
+    font-family:"avenirnext-demibold";
+    font-weight: 600;
+    font-size: 34px;
+}
+.helloUser p
+{
+    color: #abc3fc;
+    font-family:"avenirnext-demibold";
+    font-weight: 600;
+}
+.gbProgress
+{
+    margin: 6% 0 0 0;
+}
+.upIcon
+{
+    float: right;
+}
+.gbProgress .progress
+{
+    height: 7px;
+}
+.gbProgress .progress-bar
+{
+    background-color:#ff6aa2;
+}
+.gbProgress h2 span
+{
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+}
+.gbProgress h2
+{
+    color: #abc3fc;
+    font-weight: 600;
+    font-family:"avenirnext-demibold";
+    font-size: 18px;
+    margin: 0 0 10px 0 !important;
+}
+.filesShowcase
+{
+    background-color: #fff;
+    padding: 30px 0;
+    border-radius: 45px 45px 2px 2px;
+}
+.tabShowcase
+{
+    border-bottom: 2px solid #d3d7e0 !important;
+}
+.tabShowcase a
+{
+    font-family:"avenirnext-demibold";
+    font-size: 13px !important;
+}
+.searchBox
+{
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+.searchBox input
+{   
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    border-radius: 26px;
+    background-color: #edf1fa;
+    height: 45px;
+    padding: 0 16px 2px 46px;
+}
+.searchbox .input-icon {
+    font-size: 19px !important;
+    left: 5px !important;
+    top: 3px !important;
+    color: #959fba !important;
+}
+.cardsFolder
+{
+    margin:4% 0 2% 0 !important;
+}
+.folderType
+{
+    background-color: #f5f7fc;
+    padding: 15px;
+    border-radius: 15px;
+}
+.folderTitle
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 12px 0;
+}
+.folderHeading
+{
+    width: 60%;
+    height: 70px;
+}
+.folderTitle h1
+{
+    color: #000;
+    font-size: 1em;
+    font-family: "avenirnext-medium";
+    font-weight: 500;
+}
+.folderHeading p span
+{
+    font-size: 0.4em;
+    margin: 0 1px;
+}
+.folderHeading p
+{
+    font-size: 0.8em;
+    font-family: "avenirnext-medium";
+    font-weight: 500;
+    margin: 5px 0 0 0 !important;
+    color:#7e8494
+}
+.folderList img
+{
+    width: 65%;
+}
+#folderTab, #filesTab, #leastUse, #largest,
+#latest
+{
+    padding-bottom:40px;
+}
+/* Dashboard screen css */
+
+
+/* notification screen css */
+#notificationdBody
+{
+    background-color: #fff;
+}
+.dividerNoti
+{
+    background-color: #e8efff;
+    display: block;
+    padding: 15px 0;
+}
+.notificationHead
+{
+    background-image: url(../img/notification-wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e8efff;
+    padding: 46px 30px 60px 30px;
+}
+.notificationHead h1
+{
+    color: #345095;
+    font-family:"avenirnext-demibold";
+    font-weight: 600;
+    font-size: 34px;
+}
+.notifications
+{
+    display: block;
+    padding: 0 30px;
+}
+.notifications h1
+{
+    color: #345095;
+    font-family:"avenirnext-demibold";
+    font-weight: 600;
+    font-size: 27px;
+    margin: 30px 0 8px 0 !important;
+}
+.notifications p
+{
+    color: #5d6373;
+    font-family: "avenirnext-medium";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+/* notification screen css */
+
+
+/* profile screen css */
+
+.profileHead
+{
+    background-image: url(../img/notification-wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e8efff;
+    padding: 46px 30px 26px 30px;
+}
+.profileHead h1
+{
+    color: #345095;
+    font-family:"avenirnext-demibold";
+    font-weight: 600;
+    font-size: 34px;
+}
+.flexProfilehead
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexProfilehead
+{
+    width: 100%;
+}
+.flexProfilehead img
+{
+    width: 19px;
+    height: 19px;
+}
+.profileInfo
+{
+    padding: 0 30px;
+}
+.flexInfo
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+.userDp img
+{
+    width: 100%;
+}
+.userInfo
+{
+    margin:0 0 0 20px;
+}
+.userInfo h1
+{
+    font-size: 20px;
+    font-family:"avenirnext-demibold";
+    font-weight: 600;
+    color: #345095;
+    margin: 0 0 3px 0 !important;
+}
+.userInfo p
+{
+    font-size: 18px;
+    font-family:"avenirnext-medium";
+    font-weight: 500;
+    color: #7e8494;
+}
+.userInfo p span
+{
+    font-size: 8px;
+    margin: 0 1px;
+}
+.profileInfo .gbProgress h2 span
+{
+    color: #3c64c7;
+}
+#storageSpacebtn
+{
+    width: 100%;
+    font-family:"avenirnext-demibold";
+    font-size: 17px;
+    margin: 25px 0;
+    color: #ff6aa2;
+    border:2px solid #ff6aa2;
+    height: 48px;
+}
+.userSettings
+{
+    padding: 0 30px 25px 30px;
+    margin: 30px 0;
+}
+.flexSetting
+{
+    background-color: #f5f7fc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px;
+    border-radius: 7px;
+    margin: 0 0 22px 0;
+}
+.settingTitle h1
+{
+    font-family: "avenirnext-medium";
+    color: #242833;
+    font-size: 16px;
+    font-weight: 500;
+}
+.flexSetting p
+{
+    font-family: "avenirnext-medium";
+    font-size: 14px;
+    font-weight: 500;
+    color: #7e8494;
+}
+.settingOption i
+{
+    color: #7e8494;
+    font-size: 25px;
+}
+/* profile screen css */
+
+
+/* local-storage screen css */
+
+.localHead
+{
+    background-image: url(../img/notification-wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e8efff;
+    padding: 46px 30px 25px 30px;
+}
+.localHead h1
+{
+    color: #345095;
+    font-family:"avenirnext-demibold";
+    font-weight: 600;
+    font-size: 34px;
+}
+.storageCategory
+{
+    margin: 40px 0 0 0;
+}
+.storageCategory h1
+{
+    font-family: "avenirnext-medium";
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #5d6373;
+}
+.storageCategory img
+{
+    width: 65%;
+    margin: 0 auto 10px auto !important;
+}
+
+    /* slik slider */
+.localPageslider .slick-slide {
+    width: 110px !important;
+}
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+    /* slik slider */
+
+.categoryList
+{
+    padding: 0 20px;
+    margin: 35px 0 50px 0;
+}
+.categoryBox
+{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+.categoryImg img
+{
+    width: 90%;
+}
+.categoryTitle
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+.catHeading h1
+{
+     font-family: "avenirnext-medium";
+    font-size: 16px;
+    font-weight: 500;
+    color: #242833;
+}
+.catHeading p
+{
+     font-family: "avenirnext-medium";
+    font-size: 14px;
+    font-weight: 500;
+    color: #7e8494;
+}
+.modalCards
+{
+    height: 220px;
+    border-radius: 150px 150px 0 0 !important;
+}
+.modalCards p
+{
+    font-family: "avenirnext-medium";
+    font-size: 12px;
+    font-weight: 500;
+    height: 16px;
+    color: #686d7c;
+    margin:10px 0 0 0 !important;
+}
+.cameraTool
+{
+    width: 82%;
+    margin: 60px auto 0 auto !important;
+}
+.midTool
+{
+    margin: -25px 0 0 0 !important;
+}
+
+/* local-storage screen css */
+
+/* storage managment screen css */
+.storageHead
+{
+    background-image: url(../img/notification-wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e8efff;
+    padding: 46px 30px 35px 30px;
+}
+.storageHead h1
+{
+    color: #345095;
+    font-family:"avenirnext-demibold";
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+.storageHead h1 span
+{
+    float: left;
+}
+.piechart
+{
+    padding: 0 30px;
+}
+.piechart img
+{
+    width: 75%;
+}
+.storegePageslider .slide img
+{
+    width: 25%;
+}
+.storageTypes
+{
+    margin: 30px 0 0 0;
+}
+.storageTypes .tabShowcase a {
+    font-family: "avenirnext-demibold";
+    font-size: 10px !important;
+}
+#leastUse
+{
+    padding-top:20px ;
+}
+/* storage managment screen css */

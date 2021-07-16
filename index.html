@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>ProCreator App</title>
+    	<link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+		<link rel="stylesheet" href="assets/css/customstyle.css">
+
+</head>
+<body>
+
+	<div class="desktop-view">
+		<div class="iframe-wrap">
+			<iframe class="preview-frame" src="splash.html"></iframe>
+		</div>
+		<div class="qr"><img alt='qrcodeimage' src="odisqrcode.png"><span>Scan this code to view on Mobile Device</span></div>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script>
+	function check_width(){
+		//window.location.replace("splash.html");
+        var width = window.innerWidth;
+        console.log(width);
+		if (width < 768) {
+			window.location.replace("splash.html");
+		} 
+	}
+    $(document).ready(function() {
+    	check_width();
+    });
+    $(window).resize(function() {
+    	check_width();
+    })
+	</script>
+
+</body>
+
+</html>
